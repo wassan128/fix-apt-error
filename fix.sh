@@ -3,7 +3,7 @@
 fix() {
     if [[ -z "$1" ]]; then
         echo "usage: ${0##/*} target"
-        exit -1
+        exit 1
     fi
 
     local basepath="/var/lib/dpkg/info"
